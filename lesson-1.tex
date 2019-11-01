@@ -1,0 +1,160 @@
+\documentclass[11pt]{beamer}
+%\documentclass[11pt,handout]{beamer}
+
+%%% PACKAGES
+\usepackage[utf8]{inputenc}  % italian symbols.
+\usepackage[T1]{fontenc}     % define T1 charset for out files.
+\usepackage[italian]{babel}  % italian latex typo conventions.
+\usepackage{csquotes}        % needed by babel.
+\usepackage{amsmath}         % math features.
+\usepackage{amsthm}          % math theorems.
+\usepackage{amssymb}         % math symbols.
+\usepackage{graphicx}        % images managing.
+\usepackage{booktabs}        % \toprule, \midrule and \bottomrule in tables.
+\usepackage{algorithm}       % algorithm block.
+\usepackage{algcompatible}
+\usepackage{algpseudocode}   % style for (autoimported) package algorithmicx.
+\usepackage{csquotes}        % smart quotes.
+\usepackage[
+backend=biber,
+style=numeric,
+citestyle=numeric  % numeric, alphabetic
+]{biblatex}                  % bib management. %bibtex
+
+%%% MODE
+\mode<presentation> {   
+    
+    % THEME
+    
+    %\usetheme{default}
+    %\usetheme{AnnArbor}
+    %\usetheme{Antibes}
+    %\usetheme{Bergen}        % commented left
+    %\usetheme{Berkeley}      % menu left
+    %\usetheme{Berlin}
+    %\usetheme{Boadilla}      % nice, no top menu
+    %\usetheme{CambridgeUS}   % nice menu and footer
+    %\usetheme{Copenhagen}
+    %\usetheme{Darmstadt}
+    %\usetheme{Dresden}
+    %\usetheme{Frankfurt}     % top bullets, no info below
+    %\usetheme{Goettingen}    % no
+    %\usetheme{Hannover}      % no
+    %\usetheme{Ilmenau}       % not bad: bullets, sections, ... but too many rows
+    %\usetheme{JuanLesPins}   % tree menu
+    %\usetheme{Luebeck}       % very nice menu
+    %\usetheme{Madrid}        % default
+    %\usetheme{Malmoe}
+    %\usetheme{Marburg}
+    %\usetheme{Montpellier}
+    %\usetheme{PaloAlto}
+    %\usetheme{Pittsburgh}    % clean
+    %\usetheme{Rochester}
+    %\usetheme{Singapore}     % not bad, no info below
+    %\usetheme{Szeged}
+    %\usetheme{Warsaw}
+    \usetheme[nologos]{Padova}  % University of Pauda.
+    
+    % COLOR THEME
+    
+    %\usecolortheme{albatross}     % horrible
+    %\usecolortheme{beaver}        % red blue
+    %\usecolortheme{beetle}        % horrible
+    %\usecolortheme{crane}         % nice: yellow, orange
+    %\usecolortheme{dolphin}       % simil default
+    %\usecolortheme{dove}          % black and white
+    %\usecolortheme{fly}           % horrible
+    %\usecolortheme{lily}          % nice, clean blue
+    %\usecolortheme{orchid}        % like default
+    %\usecolortheme{rose}          % like default, very good
+    %\usecolortheme{seagull}       % grey
+    %\usecolortheme{seahorse}      % light lavanda
+    %\usecolortheme{whale}         % like default
+    %\usecolortheme{wolverine}     % yello blue
+    
+    \usefonttheme{professionalfonts}
+    
+    % To remove the footer line in all slides uncomment this line
+    %\setbeamertemplate{footline}
+    
+    % To replace the footer line in all slides with a simple slide 
+    % count uncomment this line
+    %\setbeamertemplate{footline}[page number]
+    
+    % To remove the navigation symbols from the bottom of all 
+    % slides uncomment this line
+    %\setbeamertemplate{navigation symbols}{} 
+    
+    % blocks
+    %\setbeamertemplate{blocks}[rounded][shadow=true]
+    
+} % /mode<presentation>
+
+% top menu
+%\useoutertheme[subsection=false]{miniframes}
+
+%\setbeamercolor{block title}{use=structure,fg=white,bg=blue!75!black}
+%\setbeamercolor{block body}{use=structure,fg=black,bg=white!20!white}
+
+% step by step
+%\setbeamercovered{transparent}
+
+%%% CONFIGURATIONS
+\input{macros}
+
+
+%-------------------------------------------------------------------
+%   TITLE PAGE
+%-------------------------------------------------------------------
+
+% The short title appears at the bottom of every slide, 
+% the full title is only on the title page
+\title{Lorem ipsum dolor sit amet}
+\subtitle{Curabitur sit amet mi magna}
+\author{Tizio Caio}
+\date{January 1, 1900}
+
+\begin{document}
+
+    \begin{frame}[plain]
+        \maketitle
+    \end{frame}
+
+    \begin{frame}{Outline}
+        \tableofcontents
+    \end{frame}
+    
+    
+    \section{Introduction}
+    
+    \begin{frame}{Introduction}
+        
+        Etiam eu interdum ligula
+        
+        Nunc mi eros, vulputate in ornare a, viverra eget quam \vspace{.5em}
+        
+        \begin{itemize}
+            \item Morbi \textbf{vitae lacus} porta neque tincidunt sodales \vspace{.5em}
+            \item Proin tincidunt, \textbf{neque} at tincidunt mollis \vspace{.5em}
+            \item Ut \alert{lacinia sem a nibh} consequat porttitor
+        \end{itemize}
+    \end{frame}
+    
+    
+    \section{First section}
+    
+    \begin{frame}{First section}
+        \begin{block}{Normal block}
+            Fusce luctus venenatis felis quis semper
+        \end{block}
+        
+        \begin{alertblock}{Alert block}
+            $$ E = (x_1 \vee \neg x_2 \vee \neg x_3) \wedge (x_1 \vee x_2 \vee x_4) $$
+        \end{alertblock}
+        
+        \begin{exampleblock}{Example block}
+            Proin tincidunt, neque at tincidunt mollis
+        \end{exampleblock}
+    \end{frame}
+    
+\end{document}
