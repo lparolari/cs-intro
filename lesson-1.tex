@@ -109,52 +109,101 @@ citestyle=numeric  % numeric, alphabetic
 
 % The short title appears at the bottom of every slide, 
 % the full title is only on the title page
-\title{Lorem ipsum dolor sit amet}
-\subtitle{Curabitur sit amet mi magna}
-\author{Tizio Caio}
-\date{January 1, 1900}
+\title[Introduzione]{Introduzione all'informatica}
+\subtitle{Cos'è l'informatica?}
+\author{Luca Parolari}
+\date{08 novembre 2019}
 
 \begin{document}
 
     \begin{frame}[plain]
         \maketitle
     \end{frame}
+    
+    \section{Introduzione}
 
-    \begin{frame}{Outline}
-        \tableofcontents
+    \begin{frame}
+        \frametitle{Cos'è l'informatica?}
+        
+        \blockquote{Computer Science is no more about computers than astronomy is about telescopes.}
+        
+        \begin{flushright}
+            Senza fonte: Edsger Wybe Dijkstra\\
+            (Rotterdam 1930 - Nuenen 2002)
+        \end{flushright}
     \end{frame}
-    
-    
-    \section{Introduction}
-    
-    \begin{frame}{Introduction}
+
+    \begin{frame}
+        \frametitle{Cos'è l'informatica?}
         
-        Etiam eu interdum ligula
+        \blockquote{Computer science is the study of algorithms,    including their formal and mathematical properties, their hardware realizations, their linguistic realizations and their application.}
         
-        Nunc mi eros, vulputate in ornare a, viverra eget quam \vspace{.5em}
+        \begin{flushright}
+            N.E. Gibbs, A.B.Tucker,\\ ``A model curriculum for a liberal arts degree in CS'',\\ Communications of ACM 29(3), 1986
+        \end{flushright}
+    
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{Cos'è l'informatica?}
+        
+        L'informatica è la scienza che si occupa del trattamento dell'informazione mediante \alert{procedure automatizzate}. In particolare ha per oggetto lo studio dei fondamenti teorici dell'informazione, della sua computazione a livello logico e delle tecniche pratiche per la sua implementazione e applicazione in sistemi elettronici automatizzati detti quindi sistemi informatici. (Wikipedia)
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{Un po' di storia}
+        \framesubtitle{Antichità}
+        
+        \begin{columns}
+            
+            \column{0.5\textwidth}
+            
+            Le radici sono antichissime!
+            
+            \begin{itemize}
+                \item \textbf{L'abaco}, uno dei più antichi strumenti di computazione.
+                
+                \item \textbf{La macchina di Antikythera}, il più antico calcolatore meccanico conosciuto.
+            \end{itemize}
+        
+            \column{0.5\textwidth}
+            \begin{figure}
+                \includegraphics[scale=0.3]{img/macchina-antikythera.jpg}
+                \caption{Ricostruzione della macchina di Antikythera}
+            \end{figure}
+        
+        \end{columns}   
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{Un po' di storia}
+        \framesubtitle{XVII, XVIII e XIX secolo}
+        
+        \begin{columns}
+            \column{0.55\textwidth}
+            \begin{itemize}
+                \item Gottfried Wilhelm \textbf{Leibniz} sviluppa la logica come disciplina matematica e formale, con i suoi scritti sul \alert{sistema numerico binario} (1702).
+                
+                \item George \textbf{Boole} crea un sistema nel quale è possibile trattare ogni relazione logica attraverso l'utilizzo di \alert{formule algebriche} (1854).
+            \end{itemize}
+            
+            \column{0.45\textwidth}
+            \begin{figure}
+                \includegraphics[scale=0.4]{img/calcolatrice-leibnitz.jpg}
+                \caption{Calcolatrice di Leibnitz}
+            \end{figure}
+        \end{columns}
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{Un po' di storia}
+        \framesubtitle{XX secolo}
         
         \begin{itemize}
-            \item Morbi \textbf{vitae lacus} porta neque tincidunt sodales \vspace{.5em}
-            \item Proin tincidunt, \textbf{neque} at tincidunt mollis \vspace{.5em}
-            \item Ut \alert{lacinia sem a nibh} consequat porttitor
+            \item Alan \textbf{Turing} riesce nell'impresa di decifrare i messaggi in codice utilizzati dai tedeschi con la macchina Enigma. Fornisce importanti contributi nel campo della \alert{computabilità}.
+            
+            \item Kurt \textbf{Gödel}, dà un'enorme spinta alla teoria informatica di base e ai sistemi formali che la sorreggono come le \alert{funzioni ricorsive}, il \alert{lambda calcolo} e la \alert{macchina di Turing}.
         \end{itemize}
     \end{frame}
-    
-    
-    \section{First section}
-    
-    \begin{frame}{First section}
-        \begin{block}{Normal block}
-            Fusce luctus venenatis felis quis semper
-        \end{block}
-        
-        \begin{alertblock}{Alert block}
-            $$ E = (x_1 \vee \neg x_2 \vee \neg x_3) \wedge (x_1 \vee x_2 \vee x_4) $$
-        \end{alertblock}
-        
-        \begin{exampleblock}{Example block}
-            Proin tincidunt, neque at tincidunt mollis
-        \end{exampleblock}
-    \end{frame}
-    
+
 \end{document}
