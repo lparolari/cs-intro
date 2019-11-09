@@ -22,10 +22,10 @@ citestyle=numeric  % numeric, alphabetic
 ]{biblatex}                  % bib management. %bibtex
 
 %%% MODE
-\mode<presentation> {   
-    
+\mode<presentation> {
+
     % THEME
-    
+
     %\usetheme{default}
     %\usetheme{AnnArbor}
     %\usetheme{Antibes}
@@ -54,9 +54,9 @@ citestyle=numeric  % numeric, alphabetic
     %\usetheme{Szeged}
     %\usetheme{Warsaw}
     \usetheme[nologos]{Padova}  % University of Pauda.
-    
+
     % COLOR THEME
-    
+
     %\usecolortheme{albatross}     % horrible
     %\usecolortheme{beaver}        % red blue
     %\usecolortheme{beetle}        % horrible
@@ -71,23 +71,23 @@ citestyle=numeric  % numeric, alphabetic
     %\usecolortheme{seahorse}      % light lavanda
     %\usecolortheme{whale}         % like default
     %\usecolortheme{wolverine}     % yello blue
-    
+
     \usefonttheme{professionalfonts}
-    
+
     % To remove the footer line in all slides uncomment this line
     %\setbeamertemplate{footline}
-    
-    % To replace the footer line in all slides with a simple slide 
+
+    % To replace the footer line in all slides with a simple slide
     % count uncomment this line
     %\setbeamertemplate{footline}[page number]
-    
-    % To remove the navigation symbols from the bottom of all 
+
+    % To remove the navigation symbols from the bottom of all
     % slides uncomment this line
-    %\setbeamertemplate{navigation symbols}{} 
-    
+    %\setbeamertemplate{navigation symbols}{}
+
     % blocks
     %\setbeamertemplate{blocks}[rounded][shadow=true]
-    
+
 } % /mode<presentation>
 
 % top menu
@@ -107,7 +107,7 @@ citestyle=numeric  % numeric, alphabetic
 %   TITLE PAGE
 %-------------------------------------------------------------------
 
-% The short title appears at the bottom of every slide, 
+% The short title appears at the bottom of every slide,
 % the full title is only on the title page
 \title[Introduzione]{Introduzione all'informatica}
 \subtitle{Cos'è l'informatica?}
@@ -119,21 +119,21 @@ citestyle=numeric  % numeric, alphabetic
     \begin{frame}[plain]
         \maketitle
     \end{frame}
-    
+
     \section{Introduzione}
 
     \begin{frame}
         \frametitle{Cos'è l'informatica}
-        
+
         \centering
         Quiz: \href{https://pollev.com/lucaparolari783}{https://pollev.com/lucaparolari783}
     \end{frame}
 
     \begin{frame}
         \frametitle{Cos'è l'informatica?}
-        
+
         \blockquote{Computer Science is no more about computers than astronomy is about telescopes.}
-        
+
         \begin{flushright}
             Senza fonte: Edsger Wybe Dijkstra\\
             (Rotterdam 1930 - Nuenen 2002)
@@ -142,58 +142,55 @@ citestyle=numeric  % numeric, alphabetic
 
     \begin{frame}
         \frametitle{Cos'è l'informatica?}
-        
+
         \blockquote{Computer science is the study of algorithms,    including their formal and mathematical properties, their hardware realizations, their linguistic realizations and their application.}
-        
+
         \begin{flushright}
             N.E. Gibbs, A.B.Tucker,\\ ``A model curriculum for a liberal arts degree in CS'',\\ Communications of ACM 29(3), 1986
         \end{flushright}
-    
     \end{frame}
 
     \begin{frame}
         \frametitle{Cos'è l'informatica?}
-        
+
         L'informatica è la scienza che si occupa del trattamento dell'informazione mediante \alert{procedure automatizzate}. In particolare ha per oggetto lo studio dei fondamenti teorici dell'informazione, della sua computazione a livello logico e delle tecniche pratiche per la sua implementazione e applicazione in sistemi elettronici automatizzati detti quindi sistemi informatici. (Wikipedia)
     \end{frame}
 
     \begin{frame}
         \frametitle{Un po' di storia}
         \framesubtitle{Antichità}
-        
+
         \begin{columns}
-            
             \column{0.5\textwidth}
-            
+
             Le radici sono antichissime!
-            
+
             \begin{itemize}
                 \item \textbf{L'abaco}, uno dei più antichi strumenti di computazione.
-                
+
                 \item \textbf{La macchina di Antikythera}, il più antico calcolatore meccanico conosciuto.
             \end{itemize}
-        
+
             \column{0.5\textwidth}
             \begin{figure}
                 \includegraphics[scale=0.3]{img/macchina-antikythera.jpg}
                 \caption{Ricostruzione della macchina di Antikythera}
             \end{figure}
-        
-        \end{columns}   
+        \end{columns}
     \end{frame}
 
     \begin{frame}
         \frametitle{Un po' di storia}
         \framesubtitle{XVII, XVIII e XIX secolo}
-        
+
         \begin{columns}
             \column{0.55\textwidth}
             \begin{itemize}
                 \item Gottfried Wilhelm \textbf{Leibniz} sviluppa la logica come disciplina matematica e formale, con i suoi scritti sul \alert{sistema numerico binario} (1702).
-                
+
                 \item George \textbf{Boole} crea un sistema nel quale è possibile trattare ogni relazione logica attraverso l'utilizzo di \alert{formule algebriche} (1854).
             \end{itemize}
-            
+
             \column{0.45\textwidth}
             \begin{figure}
                 \includegraphics[scale=0.4]{img/calcolatrice-leibniz.jpg}
@@ -205,10 +202,10 @@ citestyle=numeric  % numeric, alphabetic
     \begin{frame}
         \frametitle{Un po' di storia}
         \framesubtitle{XX secolo}
-        
+
         \begin{itemize}
             \item Alan \textbf{Turing} riesce nell'impresa di decifrare i messaggi in codice utilizzati dai tedeschi con la macchina Enigma. Fornisce importanti contributi nel campo della \alert{computabilità}.
-            
+
             \item Kurt \textbf{Gödel}, dà un'enorme spinta alla teoria informatica di base e ai sistemi formali che la sorreggono come le \alert{funzioni ricorsive}, il \alert{lambda calcolo} e la \alert{macchina di Turing}.
         \end{itemize}
     \end{frame}
@@ -216,10 +213,10 @@ citestyle=numeric  % numeric, alphabetic
     \begin{frame}
         \frametitle{Un lato oscuro}
         \framesubtitle{Il razzo Ariane 5}
-        
+
         \centering
         Quiz: \href{https://www.kahoot.it}{https://www.kahoot.it}
-        
+
         \begin{figure}
             \includegraphics[scale=0.7]{img/ariane-5-explosion.jpg}
             \caption{Razzo Ariane 5}
@@ -228,9 +225,9 @@ citestyle=numeric  % numeric, alphabetic
 
     \begin{frame}
         \frametitle{Gli ultimi anni}
-        
+
         Due sono stati i grossi ``boost'' per l'informatica:
-        
+
         \begin{itemize}
             \item \textbf{internet}, che ha aumentato esponenzialmente l'interscambio di informazioni;
             \item la \textbf{potenza} dei processori, che ha permesso di creare applicazioni sempre più complesse.
@@ -240,7 +237,7 @@ citestyle=numeric  % numeric, alphabetic
     \begin{frame}
         \frametitle{Hardware}
         \framesubtitle{La macchina di von Neumann}
-        
+
         \begin{figure}
             \includegraphics[scale=0.15]{img/macchina-von-neumann.png}
             \caption{Architettura di von Neumann}
@@ -250,7 +247,7 @@ citestyle=numeric  % numeric, alphabetic
     \begin{frame}
         \frametitle{Software}
         \framesubtitle{Classifica linguaggi di programmazione}
-        
+
         \begin{figure}
             \includegraphics[scale=0.2]{img/classifica-lp-tiobe.png}
             \caption{Top 10 linguaggi di programmazione, indice TIOBE}
@@ -259,7 +256,7 @@ citestyle=numeric  % numeric, alphabetic
 
     \begin{frame}
         \frametitle{Risorse}
-        
+
         \begin{itemize}
             \item P. Camagni e R. Nicolassy, Corso di informatica linguaggio C e C++ (Hoeply)
             \item Moodle oppure Google Classroom
